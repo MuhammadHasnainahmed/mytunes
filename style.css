@@ -20,6 +20,7 @@ header {
   background-color: #281154;
   width: 100%;
   position:fixed;
+
 }
 
 nav {
@@ -53,6 +54,8 @@ a {
   text-decoration: none;
   color: white;
 }
+
+
 
 
 /* section-1 */
@@ -106,6 +109,44 @@ a {
     /* border: 1px solid wheat; */
   }
 
+}
+
+
+.section-2{
+  background-color: #281154;
+  background-attachment: fixed;
+  padding-top: 30px;
+  
+}
+
+.section-2 .container{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  width: 50%;
+}
+
+.section-2 p{
+  color: lavender;
+  font-size: smaller;
+}
+
+.button-1{
+  width: 15%;
+  height: 50px;
+  margin: 0 auto;
+  background-color: rgb(242, 61, 61);
+  color: whitesmoke;
+  transition: .5s ease-in-out ;
+}
+
+.button-1:hover{
+  /* background-color: rgb(232, 94, 94); */
+  color: black;
 }
 
 
