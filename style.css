@@ -8,7 +8,7 @@ body {
   line-height: 1;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -19,8 +19,7 @@ body {
 header {
   background-color: #281154;
   width: 100%;
-  position:fixed;
-
+  position: fixed;
 }
 
 nav {
@@ -43,7 +42,6 @@ nav ul {
   gap: 10px;
   font-size: smaller;
   margin-top: 5px;
- 
 }
 
 ul {
@@ -53,14 +51,17 @@ ul {
 a {
   text-decoration: none;
   color: white;
+  transition: 0.3s ease-in-out;
 }
 
-
-
+a:hover {
+  /* color: aqua; */
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
 
 /* section-1 */
- 
-.section-1{
+
+.section-1 {
   background-image: url(./images/hero_image.png);
   height: 100vh;
   width: 100%;
@@ -73,83 +74,118 @@ a {
   text-align: center;
 }
 
-.section-1 .container{
+.section-1 .container {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
-.section-1 h1{
+.section-1 h1 {
   font-size: 96px;
 }
 
-.section-1 h3{
+.section-1 h3 {
   font-size: 32px;
 }
 
-.section-1 p{
+.section-1 p {
   width: 70%;
   margin: 0 auto;
   /* border: 1px solid wheat; */
 }
-
+#icon {
+  display: none;
+}
+#nav-item {
+  display: none;
+}
 @media only screen and (min-width: 320px) and (max-width: 450px) {
-  .section-1 h1{
+  .section-1 h1 {
     font-size: 50px;
   }
 
-  .section-1 h3{
+  .section-1 h3 {
     font-size: 25px;
   }
 
-  .section-1 p{
+  .section-1 p {
     width: 90%;
     font-size: smaller;
     margin: 0 auto;
     /* border: 1px solid wheat; */
   }
+  .nav-ul a {
+    display: none;
+  }
+  #nav-item {
+    display: inline;
+    margin: 0px 30px;
+    background-color: #281154;
+    color: white;
+    /* border: 1px solid white; */
+    border: none;
 
+    /* padding: 0.5rem 1rem; */
+  }
 }
 
-
-.section-2{
+.section-2 {
   background-color: #281154;
   background-attachment: fixed;
   padding-top: 30px;
-  
 }
 
-.section-2 .container{
-  
+.section-2 .container {
   display: flex;
   flex-direction: column;
   gap: 30px;
   justify-content: center;
   text-align: center;
   color: white;
-  width: 50%;
 }
 
-.section-2 p{
+.section-2 h5 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section-2 p {
   color: lavender;
   font-size: smaller;
 }
 
-.button-1{
-  width: 15%;
+.button-1 {
+  width: auto;
   height: 50px;
   margin: 0 auto;
   background-color: rgb(242, 61, 61);
   color: whitesmoke;
-  transition: .5s ease-in-out ;
+  border: none;
+  border-radius: 5px;
+  transition: 0.5s ease-in-out;
 }
 
-.button-1:hover{
-  /* background-color: rgb(232, 94, 94); */
+.button-1:hover {
+  background-color: rgb(241, 60, 60);
   color: black;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 450px) {
+}
 
+/* 
+.section-3{
+ 
+  padding-top: 50px;
 
+}
 
-
+.section-3 .container{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+  width: 50%;
+  line-height: 2;
+  
+} */
