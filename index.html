@@ -17,37 +17,37 @@
     <title>My Tunes</title>
   </head>
   <body>
-      
-    
-
     <header>
       <nav class="container">
         <div class="logo">myTunes</div>
-
-        <ul class="nav-ul" id=""> 
+      
+        <ul class="nav-ul" id="">
           <a href="#overview">
             <li>Overview</li>
           </a>
           <a href="#music">
             <li>Music</li>
           </a>
+         
+
           <a href="#video">
             <li>Video</li>
           </a>
+
           <a href="#gift cards">
             <li>Gift Cards</li>
           </a>
-          <select  name="nav-item" id="nav-item">
-
-            <option value="Overview">Overview</option>
-            <option value="Music">Music</option>
-            <option value="Video">Video</option>
-            <option value="Gift Cards">Gift Cards</option>
-
+          <select name="nav-item" id="nav-item">
+            <option >
+            
+            </option>
+            <option >Overview</option>
+            <option >Music</option>
+            <option >Video</option>
+            <option  >Gift Cards</option>
           </select>
-          <i class="fa-solid fa-bars" id="icon"></i>
         </ul>
-        </nav>
+      </nav>
     </header>
 
     <main>
@@ -85,13 +85,13 @@
             devices.
           </p>
 
-          <div class="ipad-iphone-img">
-            <!-- <img src="./images/ipad-iphone.png" alt="ipad-iphone" /> -->
+          <div class="ipad-iphone">
+            <img class="ipad-img" src="./images/ipad-iphone.png" alt="ipad-iphone"  />
           </div>
         </div>
       </section>
 
-      <!-- <section class="section-3">
+      <section class="section-3" id="movie">
         <div class="container">
           <h3>The movie and TV collection you always wished for. Granted.</h3>
           <p>
@@ -103,32 +103,38 @@
             Just tap to play, or even download if you’re going somewhere you won’t
             have Wi-Fi.
           </p>
-          <button>Read More</button>
+          <button class="button-2">Read More</button>
           <div class="mac-img">
-            <img src="./images/maclaptop.png" alt="" />
+            <img class="laptop-img" src="./images/maclaptop.png" alt="laptop" />
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="section-4">
+      <section class="section-4" id="video">
+        
+        <video  autoplay muted loop class="my-video"  >
+          <source src="./videos/video music.mp4" type="video/mp4">
+        </video>
+
         <div class="container">
-          <h4>A world of entertainment. Available wherever you are.</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            veniam nobis, nisi ut expedita, doloribus reprehenderit explicabo
-            non velit repellat alias saepe inventore repellendus? Molestias
-            suscipit eos tempora? Quae quaerat cumque in veritatis impedit
-            dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi
-            totam ad quas? Ipsam laudantium soluta delectus!
-          </p>
-        </div>
-      </section> -->
+            <h4>A world of entertainment. Available wherever you are.</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+              veniam nobis, nisi ut expedita, doloribus reprehenderit explicabo
+              non velit repellat alias saepe inventore repellendus? Molestias
+              suscipit eos tempora? Quae quaerat cumque in veritatis impedit
+              dolorum sapiente recusandae minima quo aperiam quam, excepturi quasi
+              totam ad quas? Ipsam laudantium soluta delectus!
+            </p>
+          </div>
+      </section>
 
-      <!-- <div class="container">
-        <section class="section-5">
-          <div class="giftcard">
+      <!-- <div class="container"> -->
+      <section class="section-5">
+        <div class="giftcard">
             <img src="./images/gift_card.png" alt="gift_card" />
           </div>
+          <div class="container">
           <h3>Gift Cards</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
@@ -140,11 +146,11 @@
           <p>
             Already have an Orange MyTunes Music Gift Card?
           </p>
-
-          <button>Redeem</button>
+          <div class="divided"></div>
+          <button class="button-3">Redeem</button>
+        </div>
         </section>
-      </div> -->
+      <!-- </div> -->
     </main>
-
   </body>
 </html>
