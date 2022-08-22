@@ -9,6 +9,7 @@ body {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  background-attachment: fixed;
 }
 
 .container {
@@ -21,7 +22,7 @@ body {
 header {
   background-color: #281154;
   width: 100%;
-  /* position: fixed; */
+  position: fixed;
 }
 
 nav {
@@ -32,6 +33,7 @@ nav {
   text-align: center;
   color: white;
   padding: 20px 0;
+  z-index: 1000;
   /* padding-left: 50px; */
 }
 
@@ -72,7 +74,7 @@ a:hover {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   display: grid;
   color: white;
   place-items: center;
@@ -103,7 +105,7 @@ a:hover {
 }
 
 /*  */
-@media only screen and (min-width: 320px) and (max-width: 450px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   .section-1 h1 {
     font-size: 50px;
   }
@@ -279,6 +281,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   padding:0px 20%;
+  margin-bottom: 30px;
   
   
   }
@@ -311,5 +314,90 @@ a:hover {
 .button-3:hover{
   background-color: #683cb9;
 }
+
+
+@media only screen and (min-width: 320px) and (max-width: 900px) {
+  .section-5 {
+    display: block;
+    padding: 0 15%;
+    align-items: center;
+
+  }
+
+  .section-5 .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .gift-img{
+    width: 100%;
+  }
+
+}
+
+
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  .section-5 {
+    padding: 0 2%;
+    
+  }
+}
+
+@media only screen and (min-width: 1210px) and (max-width: 1500px) {
+  .section-5{
+    margin-top: 45%;
+  }
+}
+
+
+/* footer */
+
+.section-6{
+  background-color: #281154;
+  padding: 50px;
+}
+
+
+.section-6 .container{
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+  line-height: 1.5;
+}
+
+
+.section-6 h4{
+  font-size: larger;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  margin-bottom: 10px;
+  /* border: 1px solid rebeccapurple; */
+  width: 100%;
+  /* padding-left: 5%; */
+}
+
+.lower-section{
+  background-color: #270082;
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 20px;
+  font-size: smaller;
+  height: 50px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 630px) {
+  .section-6 .container{
+      display: block;
+      text-align: center;
+  }
+}
+
+
 
 
